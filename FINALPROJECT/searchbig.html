@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/sass/searchbig.css">
+    <link rel="stylesheet" href="assets/sass/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <header class="sticky-top">
+        <div class="container">
+          <nav>
+            <div class="mainsec">
+              <a href=""><img src="assets/img/logo.svg" alt="" /></a>
+              <ul type="none">
+                <li>
+                  <a href="">Deals Today</a>
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                </li>
+                <li>
+                  <a href="">Offers</a>
+                </li>
+                <li>
+                  <a href="">FAQ</a>
+                </li>
+                <li>
+                  <a href="">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="search">
+              <form action="" class="form">
+                <input type="text" placeholder="Search Anyrhing..." />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </form>
+            </div>
+            <div class="features">
+              <div class="heart">
+                <!-- <div class="heartnum"><p>0</p></div> -->
+                <a href=""><i class="fa-regular fa-heart fa-lg"></i></a>
+                <p style="cursor: pointer;">Whishlist</p>
+              </div>
+              <div class="shop">
+                <!-- <div class="shopnum"><p>0</p></div> -->
+                <!-- <a  href=""
+                  ><i
+                    class="fa-solid fa-bag-shopping fa-lg"
+                    style="color: #030303"
+                  ></i
+                ></a> -->
+                
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i
+                        class="fa-solid fa-bag-shopping fa-lg"
+                        style="color: #030303"
+                      ></i></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h3 class="offcanvas-title" id="offcanvasNavbarLabel"><strong>Shopping cart</strong></h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <img src="assets/img/sidebarimg.webp" alt="" style="width: 200px; height: 310px; margin-left: 20%; margin-top: 50px;">
+                      <form class="d-flex mt-3" role="search">
+                        
+                        <button  style="padding: 15px 5px; border: 1px solid rgb(190, 189, 189); background-color: #b2b2be; border-radius: 7px; margin-left: 25%; margin-top: 30;">Proceed To Chechkout</button>
+                      </form>
+                    </div>
+                  </div>
+                  
+                     
+                      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                      </button> -->
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </div>
+                    
+                <p style="cursor: pointer;">Shopping</p>
+              </div>
+            </div>
+          </nav>
+          <div class="headerminiline"></div>
+          <nav>
+            <div class="info">
+              <div class="category">
+                <i class="fa-solid fa-bars" style="color: #fcfcfd"></i>
+                <p>All Categories</p>
+              </div>
+              <div class="category-dropdown-content">
+                <div class="category-women" id="category-content">
+                  <i class="fa-solid fa-person-dress fa-lg" style="color: #0f0f0f;"></i>
+                  <p>Women’s Fashion</p>
+                </div>
+                <div class="category-men" id="category-content">
+                  <i class="fa-solid fa-person fa-lg" style="color: #0f0f0f;"></i>
+                  <p>Men’s Fashion</p>
+                </div>
+                <div class="category-watch" id="category-content">
+                  <i class="fa-regular fa-clock fa-lg" style="color: #0f0f0f;"></i>
+                  <p>Watches</p>
+                </div>
+                <div class="category-wallet" id="category-content">
+                  <i class="fa-solid fa-wallet fa-lg" style="color: #0f0f0f;"></i>
+                  <p>Wallets</p>
+                </div>
+                <div class="category-bag" id="category-content">
+                  <i class="fa-solid fa-briefcase fa-lg" style="color: #0f0f0f;"></i>
+                  <p>Bags</p>
+                </div>
+                <div class="category-jewelry" id="category-content">
+                  <i class="fa-regular fa-gem fa-lg" style="color: #0f0f0f;"></i>
+                  <p>Jewelry</p>
+                </div>
+                <div class="category-sunglass" id="category-content">
+                  <i class="fa-solid fa-glasses fa-lg" style="color: #0f0f0f;"></i>
+                  <p>Sunglasses</p>
+                </div>
+                <div class="category-sneaker" id="category-content"> 
+                  <i class="fa-solid fa-shoe-prints fa-lg" style="color: #0f0f0f;"></i>
+                  <p>Sneakers</p>
+                </div>
+              </div>
+              <ul type="none">
+                <li class="demos">
+                  Demos<i
+                    class="fa-solid fa-caret-down"
+                    style="color: #8c9ab1"
+                  ></i>
+                  <div class="demos-dropdown-content">
+                    <ul type="none">
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                    </ul>
+                  </div>
+                </li>
+                <li style="margin-left: 40px;" class="men">
+                  Men Wear<i
+                    class="fa-solid fa-caret-down"
+                    style="color: #8c9ab1"
+                  ></i>
+                  <div class="men-dropdown-content">
+                    <div class="dropdown1" id="men-dropdown-content-divs" style="background-color: rgb(241, 240, 240);">
+                      <h5>Modern</h5>
+                      <ul type="none">
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                      </ul>
+                      <div class="dropdownminiline"></div>
+                      <h5>Modern</h5>
+                      <h5>Modern</h5>
+                    </div>
+                    <div class="dropdown2" id="men-dropdown-content-divs" style="background-color: rgb(226, 226, 226);">
+                      <h5>Modern</h5>
+                      <ul type="none">
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                      </ul>
+                      <div class="dropdownminiline"></div>
+                      <h5>Modern</h5>
+                      <h5>Modern</h5>
+                    </div>
+                    <div class="dropdown3" id="men-dropdown-content-divs" style="background-color: rgb(241, 240, 240);">
+                      <h5>Modern</h5>
+                      <ul type="none">
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                      </ul>
+                      <div class="dropdownminiline"></div>
+                      <h5>Modern</h5>
+                      <ul type="none">
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                      </ul>
+                    </div>
+                    <div class="dropdown4" id="men-dropdown-content-divs" style="background-color: rgb(226, 226, 226);">
+                      <h5>Modern</h5>
+                      <ul type="none">
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                      </ul>
+                      <div class="dropdownminiline"></div>
+                      <h5>Modern</h5>
+                      <h5>Modern</h5>
+                    </div>
+                    <div class="dropdown5" id="men-dropdown-content-divs" style="background-color: rgb(241, 240, 240);">
+                      <h5>Modern</h5>
+                      <ul type="none">
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                      </ul>
+                      <div class="dropdownminiline"></div>
+                      <h5>Modern</h5>
+                      <ul type="none">
+                        <li>Modern</li>
+                        <li>Modern</li>
+                        <li>Modern</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li style="margin-left: 40px;">
+                  Women Wear
+                  <!-- <i
+                    class="fa-solid fa-caret-down"
+                    style="color: #8c9ab1"
+                  ></i> -->
+                </li>
+                <li style="margin-left: 40px;">Search</li>
+                <li style="margin-left: 40px;">Shop</li>
+                <li style="margin-left: 40px;" class="pages">
+                  Pages<i
+                    class="fa-solid fa-caret-down"
+                    style="color: #8c9ab1"
+                  ></i>
+                  <div class="pages-dropdown-content">
+                    <ul type="none">
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="login">
+              <i class="fa-regular fa-user fa-lg" style="color: #0c0d0d"></i>
+              <p>Login</p>
+            </div>
+            <div class="language">
+              <img src="assets/img/england.png" alt="">
+              <p>English-En</p>
+              <i class="fa-solid fa-angle-down fa-2xs"></i>
+              <div class="languagesection">
+                <div class="language1">
+                  <img src="assets/img/england.png" alt="">
+                  <p>English-En</p>
+                  <i class="fa-solid fa-angle-down fa-2xs"></i>
+                </div>
+                <div class="language1">
+                  <img src="assets/img/england.png" alt="">
+                  <p>English-En</p>
+                  <i class="fa-solid fa-angle-down fa-2xs"></i>
+                </div>
+                <div class="language1">
+                  <img src="assets/img/england.png" alt="">
+                  <p>English-En</p>
+                  <i class="fa-solid fa-angle-down fa-2xs"></i>
+                </div>
+                <div class="language1">
+                  <img src="assets/img/england.png" alt="">
+                  <p>English-En</p>
+                  <i class="fa-solid fa-angle-down fa-2xs"></i>
+                </div>
+                <div class="language1">
+                  <img src="assets/img/england.png" alt="">
+                  <p>English-En</p>
+                  <i class="fa-solid fa-angle-down fa-2xs"></i>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <section id="brand">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col col-sm-6 col-md-3">
+                    <a href="#" style="color: black; text-decoration: none;">Home/Search</a>
+                    <div class="col-12 d-flex justify-content-between mt-4">
+                        <h4>Filters</h4>
+                        <p class="me-5" style="cursor: pointer;">Clear All</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-column">
+                        <h5>Category</h5>
+                        <label for="woman" class="col-12 d-flex ">
+                            <input type="checkbox" id="woman">
+                            <p>Woman</p>
+                        </label>
+                        <label for="man" class="col-12 d-flex">
+                            <input type="checkbox" id="man">
+                            <p>Man</p>
+                        </label>
+                        <label for="watch" class="col-12 d-flex">
+                            <input type="checkbox" id="watch">
+                            <p>Watch</p>
+                        </label>
+                        <label for="kids" class="col-12 d-flex">
+                            <input type="checkbox" id="kids">
+                            <p>Kids</p>
+                        </label>
+                        <label for="sports" class="col-12 d-flex">
+                            <input type="checkbox" id="sports">
+                            <p>Sports</p>
+                        </label>
+                        <label for="sunglass" class="col-12 d-flex">
+                            <input type="checkbox" id="sunglass">
+                            <p>Sunglass</p>
+                        </label>
+                        <label for="bags" class="col-12 d-flex">
+                            <input type="checkbox" id="bags">
+                            <p>Bags</p>
+                        </label>
+                        <label for="sneaker" class="col-12 d-flex">
+                            <input type="checkbox" id="sneaker">
+                            <p>Sneakers</p>
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-column">
+                        <h5>Brands</h5>
+                        <label for="Shovia" class="col-12 d-flex ">
+                            <input type="checkbox" id="Shovia">
+                            <p>Shovia</p>
+                        </label>
+                        <label for="Fusion" class="col-12 d-flex">
+                            <input type="checkbox" id="Fusion">
+                            <p>Fusion</p>
+                        </label>
+                        <label for="Hunter" class="col-12 d-flex">
+                            <input type="checkbox" id="Hunter">
+                            <p>Hunter Shoes</p>
+                        </label>
+                        <label for="Club" class="col-12 d-flex">
+                            <input type="checkbox" id="Club">
+                            <p>Club Shoes</p>
+                        </label>
+                        <label for="Hoppister" class="col-12 d-flex">
+                            <input type="checkbox" id="Hoppister">
+                            <p>Hoppister</p>
+                        </label>
+                        <label for="Blaze" class="col-12 d-flex">
+                            <input type="checkbox" id="Blaze">
+                            <p>Blaze Fashion</p>
+                        </label>
+                        <label for="Elegance" class="col-12 d-flex">
+                            <input type="checkbox" id="Elegance">
+                            <p>Elegance</p>
+                        </label>
+                        <label for="Fashadil" class="col-12 d-flex">
+                            <input type="checkbox" id="Fashadil">
+                            <p>Fashadil</p>
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-column">
+                        <h5>Price</h5>
+                        <label for="$50" class="col-12 d-flex ">
+                            <input type="checkbox" id="$50">
+                            <p>Under $50</p>
+                        </label>
+                        <label for="$50 to $100" class="col-12 d-flex">
+                            <input type="checkbox" id="$50 to $100">
+                            <p>$50 to $100</p>
+                        </label>
+                        <label for="$100 to $150" class="col-12 d-flex">
+                            <input type="checkbox" id="$100 to $150">
+                            <p>$100 to $150</p>
+                        </label>
+                        <label for="$150 to $200" class="col-12 d-flex">
+                            <input type="checkbox" id="$150 to $200">
+                            <p>$150 to $200</p>
+                        </label>
+                        <label for="$200 to $300" class="col-12 d-flex">
+                            <input type="checkbox" id="$200 to $300">
+                            <p>$200 to $300</p>
+                        </label>
+                        <label for="$300 to $500" class="col-12 d-flex">
+                            <input type="checkbox" id="$300 to $500">
+                            <p>$300 to $500</p>
+                        </label>
+                        <label for="$500 to $1000" class="col-12 d-flex">
+                            <input type="checkbox" id="$500 to $1000">
+                            <p>$500 to $1000</p>
+                        </label>
+                        <label for="Over $1000" class="col-12 d-flex">
+                            <input type="checkbox" id="Over $1000">
+                            <p>Over $1000</p>
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-column">
+                        <h5>Colors</h5>
+                        <label for="black" class="col-12 d-flex">
+                            <input type="checkbox" id="black">
+                            <p>Black</p>
+                        </label>
+                        <label for="blue" class="col-12 d-flex">
+                            <input type="checkbox" id="blue">
+                            <p>Blue</p>
+                        </label>
+                        <label for="olive" class="col-12 d-flex">
+                            <input type="checkbox" id="olive">
+                            <p>Olive</p>
+                        </label>
+                        <label for="maroon" class="col-12 d-flex">
+                            <input type="checkbox" id="maroon">
+                            <p>Maroon</p>
+                        </label>
+                        <label for="brown" class="col-12 d-flex">
+                            <input type="checkbox" id="brown">
+                            <p>Brown</p>
+                        </label>
+                        <label for="white" class="col-12 d-flex">
+                            <input type="checkbox" id="white">
+                            <p>White</p>
+                        </label>
+                        <label for="gray" class="col-12 d-flex">
+                            <input type="checkbox" id="gray">
+                            <p>Gray</p>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+                <div  class="col-12 col-sm-6 col-md-8" >
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <h3>Casual Wear</h3>
+                        <div class="d-flex justify-content-between align-items-center col-4">
+                            <p class="mt-2">9,608 items</p>
+                            <h6 id="sorting" style="cursor: pointer;" class="d-flex align-items-center justify-content-around">Sorting Options <div class="d-flex flex-column"><i class="fa-solid fa-angle-up"></i><i class="fa-solid fa-angle-down"></i></div></h6>
+                        </div>
+                    </div>
+                    <div class="row g-4 mt-3" id="productcon">
+
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mt-5">
+                        <button id="loadmore">Load More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="module" src="assets/js/searchbig.js"></script>
+</body>
+</html>

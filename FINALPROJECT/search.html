@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/sass/search.css">
+    <link rel="stylesheet" href="assets/sass/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+<body>
+    
+  <header class="sticky-top">
+    <div class="container">
+      <nav>
+        <div class="mainsec">
+          <a href=""><img src="assets/img/logo.svg" alt="" /></a>
+          <ul type="none">
+            <li>
+              <a href="">Deals Today</a>
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </li>
+            <li>
+              <a href="">Offers</a>
+            </li>
+            <li>
+              <a href="">FAQ</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search">
+          <form action="" class="form">
+            <input type="text" placeholder="Search Anyrhing..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+        </div>
+        <div class="features">
+          <div class="heart">
+            <!-- <div class="heartnum"><p>0</p></div> -->
+            <a href=""><i class="fa-regular fa-heart fa-lg"></i></a>
+            <p style="cursor: pointer;">Whishlist</p>
+          </div>
+          <div class="shop">
+            <!-- <div class="shopnum"><p>0</p></div> -->
+            <!-- <a  href=""
+              ><i
+                class="fa-solid fa-bag-shopping fa-lg"
+                style="color: #030303"
+              ></i
+            ></a> -->
+            
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i
+                    class="fa-solid fa-bag-shopping fa-lg"
+                    style="color: #030303"
+                  ></i></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h3 class="offcanvas-title" id="offcanvasNavbarLabel"><strong>Shopping cart</strong></h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <img src="assets/img/sidebarimg.webp" alt="" style="width: 200px; height: 310px; margin-left: 20%; margin-top: 50px;">
+                  <form class="d-flex mt-3" role="search">
+                    
+                    <button  style="padding: 15px 5px; border: 1px solid rgb(190, 189, 189); background-color: #b2b2be; border-radius: 7px; margin-left: 25%; margin-top: 30;">Proceed To Chechkout</button>
+                  </form>
+                </div>
+              </div>
+              
+                 
+                  <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                  </button> -->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                
+            <p style="cursor: pointer;">Shopping</p>
+          </div>
+        </div>
+      </nav>
+      <div class="headerminiline"></div>
+      <nav>
+        <div class="info">
+          <div class="category">
+            <i class="fa-solid fa-bars" style="color: #fcfcfd"></i>
+            <p>All Categories</p>
+          </div>
+          <div class="category-dropdown-content">
+            <div class="category-women" id="category-content">
+              <i class="fa-solid fa-person-dress fa-lg" style="color: #0f0f0f;"></i>
+              <p>Women’s Fashion</p>
+            </div>
+            <div class="category-men" id="category-content">
+              <i class="fa-solid fa-person fa-lg" style="color: #0f0f0f;"></i>
+              <p>Men’s Fashion</p>
+            </div>
+            <div class="category-watch" id="category-content">
+              <i class="fa-regular fa-clock fa-lg" style="color: #0f0f0f;"></i>
+              <p>Watches</p>
+            </div>
+            <div class="category-wallet" id="category-content">
+              <i class="fa-solid fa-wallet fa-lg" style="color: #0f0f0f;"></i>
+              <p>Wallets</p>
+            </div>
+            <div class="category-bag" id="category-content">
+              <i class="fa-solid fa-briefcase fa-lg" style="color: #0f0f0f;"></i>
+              <p>Bags</p>
+            </div>
+            <div class="category-jewelry" id="category-content">
+              <i class="fa-regular fa-gem fa-lg" style="color: #0f0f0f;"></i>
+              <p>Jewelry</p>
+            </div>
+            <div class="category-sunglass" id="category-content">
+              <i class="fa-solid fa-glasses fa-lg" style="color: #0f0f0f;"></i>
+              <p>Sunglasses</p>
+            </div>
+            <div class="category-sneaker" id="category-content"> 
+              <i class="fa-solid fa-shoe-prints fa-lg" style="color: #0f0f0f;"></i>
+              <p>Sneakers</p>
+            </div>
+          </div>
+          <ul type="none">
+            <li class="demos">
+              Demos<i
+                class="fa-solid fa-caret-down"
+                style="color: #8c9ab1"
+              ></i>
+              <div class="demos-dropdown-content">
+                <ul type="none">
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                </ul>
+              </div>
+            </li>
+            <li style="margin-left: 40px;" class="men">
+              Men Wear<i
+                class="fa-solid fa-caret-down"
+                style="color: #8c9ab1"
+              ></i>
+              <div class="men-dropdown-content">
+                <div class="dropdown1" id="men-dropdown-content-divs" style="background-color: rgb(241, 240, 240);">
+                  <h5>Modern</h5>
+                  <ul type="none">
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                  </ul>
+                  <div class="dropdownminiline"></div>
+                  <h5>Modern</h5>
+                  <h5>Modern</h5>
+                </div>
+                <div class="dropdown2" id="men-dropdown-content-divs" style="background-color: rgb(226, 226, 226);">
+                  <h5>Modern</h5>
+                  <ul type="none">
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                  </ul>
+                  <div class="dropdownminiline"></div>
+                  <h5>Modern</h5>
+                  <h5>Modern</h5>
+                </div>
+                <div class="dropdown3" id="men-dropdown-content-divs" style="background-color: rgb(241, 240, 240);">
+                  <h5>Modern</h5>
+                  <ul type="none">
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                  </ul>
+                  <div class="dropdownminiline"></div>
+                  <h5>Modern</h5>
+                  <ul type="none">
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                  </ul>
+                </div>
+                <div class="dropdown4" id="men-dropdown-content-divs" style="background-color: rgb(226, 226, 226);">
+                  <h5>Modern</h5>
+                  <ul type="none">
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                  </ul>
+                  <div class="dropdownminiline"></div>
+                  <h5>Modern</h5>
+                  <h5>Modern</h5>
+                </div>
+                <div class="dropdown5" id="men-dropdown-content-divs" style="background-color: rgb(241, 240, 240);">
+                  <h5>Modern</h5>
+                  <ul type="none">
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                  </ul>
+                  <div class="dropdownminiline"></div>
+                  <h5>Modern</h5>
+                  <ul type="none">
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li style="margin-left: 40px;">
+              Women Wear
+              <!-- <i
+                class="fa-solid fa-caret-down"
+                style="color: #8c9ab1"
+              ></i> -->
+            </li>
+            <li style="margin-left: 40px;">Search</li>
+            <li style="margin-left: 40px;">Shop</li>
+            <li style="margin-left: 40px;" class="pages">
+              Pages<i
+                class="fa-solid fa-caret-down"
+                style="color: #8c9ab1"
+              ></i>
+              <div class="pages-dropdown-content">
+                <ul type="none">
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                  <li>Modern</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="login">
+          <i class="fa-regular fa-user fa-lg" style="color: #0c0d0d"></i>
+          <p>Login</p>
+        </div>
+        <div class="language">
+          <img src="assets/img/england.png" alt="">
+          <p>English-En</p>
+          <i class="fa-solid fa-angle-down fa-2xs"></i>
+          <div class="languagesection">
+            <div class="language1">
+              <img src="assets/img/england.png" alt="">
+              <p>English-En</p>
+              <i class="fa-solid fa-angle-down fa-2xs"></i>
+            </div>
+            <div class="language1">
+              <img src="assets/img/england.png" alt="">
+              <p>English-En</p>
+              <i class="fa-solid fa-angle-down fa-2xs"></i>
+            </div>
+            <div class="language1">
+              <img src="assets/img/england.png" alt="">
+              <p>English-En</p>
+              <i class="fa-solid fa-angle-down fa-2xs"></i>
+            </div>
+            <div class="language1">
+              <img src="assets/img/england.png" alt="">
+              <p>English-En</p>
+              <i class="fa-solid fa-angle-down fa-2xs"></i>
+            </div>
+            <div class="language1">
+              <img src="assets/img/england.png" alt="">
+              <p>English-En</p>
+              <i class="fa-solid fa-angle-down fa-2xs"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+</header>
+    
+    <section class="searchsecone">
+        <div class="container">
+            <p><span style="cursor: pointer; margin-right: 5px;">Home</span>/<span style="cursor: pointer; margin-right: 5px; margin-left: 5px;">Products</span>/<span style="cursor: pointer; margin-left: 5px;">Eco Friendly Clothing Brands That</span></p>
+            <div class="row">
+                <div class="imgcon col-xl-7">
+                    <div class="row">
+                        <img src="assets/img/searchimg1.png" alt="" class="col-6">
+                        <img src="assets/img/searchimg2.png" alt="" class="col-6">
+                        <img src="assets/img/searchimg3.png" alt="" class="col-6" style="margin-top: 20px;">
+                        <img src="assets/img/searchimg4.png" alt="" class="col-6" style="margin-top: 20px;">
+                    </div>
+                </div>
+                <div class="info col-xl-5">
+                    <h2><strong>Maniac Red Boys</strong></h2>
+                    <p>Children’s clothing/ kids wear is usually more casual than adult clothing, fit play and rest. Hosiery is usually used. More recently, however, tons of childrenswear is heavily influenced by trends in adult fashion</p>
+                    <div class="cost">
+                        <p style="font-size: 30px;"><strong>$40.00</strong></p>
+                        <p style="text-decoration: line-through; margin-left: 20px; margin-top: 40px;">$50.00</p>
+                    </div>
+                    <div class="miniline"></div>
+                    <h5 style="margin-top: 25px;">Size</h5>
+                    <div class="modalsize">
+                      <div class="sizebox">S</div>
+                      <div class="sizebox" style="margin-left: 10px;">M</div>
+                      <div class="sizebox" style="margin-left: 10px;">L</div>
+                      <div class="sizebox" style="margin-left: 10px;">XL</div>
+                    </div>
+                    <h5 style="margin-top: 25px;">Color</h5>
+                    <div class="modalcolor">
+                        <div class="colorbox">
+                          <div class="orange"></div>
+                        </div>
+                        <div class="colorbox" style="margin-left: 10px;">
+                          <div class="pink"></div>
+                        </div>
+                        <div class="colorbox" style="margin-left: 10px;">
+                          <div class="blue"></div>
+                        </div>
+                        <div class="colorbox" style="margin-left: 10px;">
+                          <div class="red"></div>
+                        </div>
+                    </div>
+                    <div class="miniline" style="margin-top: 30px;"></div>
+                    <div class="numbersec" style="margin-top: 10px;">
+                      <div class="modal-number-input">
+                        <button data-decrease class="decrement-btn">-</button>
+                        <input data-value type="text" class="number-value" value="1">
+                        <button data-increase class="increment-btn">+</button>
+                      </div>
+                      <button class="int">Add to card</button>
+                    </div>
+                    <div class="miniline" style="margin-top: 30px;"></div>
+                    <p><strong style="margin-right: 15px;">SKU:</strong>N/A</p>
+                    <p><strong style="margin-right: 15px;">Category:</strong>kids</p>
+                    <p><strong style="margin-right: 15px;">Tags:</strong>Casual,Cotton,Red</p>
+                    <div class="miniline" style="margin-top: 30px;"></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="searchtwo">
+      <div class="container">
+        <h2 style="margin-top: 80px;"><strong>Related Product</strong></h2>
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+            <img src="assets/img/body3allcard1.webp" class="card-img-top" alt="">
+            <div class="card-body">
+              <div class="rate" style="display: flex; align-items: baseline;">
+                <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                <p>4.5</p>
+              </div>
+              <h5>Armani Veni Vidi Vici</h5>
+              <p>Fendi began life in 1925 as a fur and...</p>
+              <p style="text-decoration: line-through;">$20.00</p>
+              <p>$17.99</p>
+            </div>
+          </div>
+          <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+            <img src="assets/img/body3allcard1.webp" class="card-img-top" alt="">
+            <div class="card-body">
+              <div class="rate" style="display: flex; align-items: baseline;">
+                <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                <p>4.5</p>
+              </div>
+              <h5>Armani Veni Vidi Vici</h5>
+              <p>Fendi began life in 1925 as a fur and...</p>
+              <p style="text-decoration: line-through;">$20.00</p>
+              <p>$17.99</p>
+            </div>
+          </div>
+          <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+            <img src="assets/img/body3allcard1.webp" class="card-img-top" alt="">
+            <div class="card-body">
+              <div class="rate" style="display: flex; align-items: baseline;">
+                <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                <p>4.5</p>
+              </div>
+              <h5>Armani Veni Vidi Vici</h5>
+              <p>Fendi began life in 1925 as a fur and...</p>
+              <p style="text-decoration: line-through;">$20.00</p>
+              <p>$17.99</p>
+            </div>
+          </div>
+          <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+            <img src="assets/img/body3allcard1.webp" class="card-img-top" alt="">
+            <div class="card-body">
+              <div class="rate" style="display: flex; align-items: baseline;">
+                <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                <p>4.5</p>
+              </div>
+              <h5>Armani Veni Vidi Vici</h5>
+              <p>Fendi began life in 1925 as a fur and...</p>
+              <p style="text-decoration: line-through;">$20.00</p>
+              <p>$17.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="searchsecthree">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 col-sm-12 col-md-6">
+                  <h1>Get Expert Tips In Your Inbox</h1>
+                  <p>Subscribe to our newsletter and stay updated.</p>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6">
+                  <input class="col-6" type="text" placeholder="Write your email here">
+                  <button type="submit">Subscribe</button>
+              </div>
+          </div>
+      </div>
+  </section>
+  <footer>
+      <div class="footerminiline1"></div>
+      <div class="container" id="footercon1">
+        <div class="footerinfo">
+          <img src="assets/img/logo.svg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam non amet reiciendis voluptate delectus?</p>
+          <div class="footerlogos">
+            <i class="fa-brands fa-instagram" style="color: #8f8f8f;"></i>
+            <i class="fa-brands fa-twitter" style="color: #8f8f8f;"></i>
+            <i class="fa-brands fa-facebook" style="color: #8f8f8f;"></i>
+            <i class="fa-brands fa-youtube" style="color: #8f8f8f;"></i>
+          </div>
+        </div>
+        <div class="social">
+          <h5>Social</h5>
+          <div class="footins" id="footpart2" style="margin-top: 30px;">
+            <i class="fa-brands fa-instagram" style="color: #8f8f8f;"></i>
+            <a href="">Instagram</a>
+          </div>
+          <div class="foottwi" id="footpart2" style="margin-top: 10px;">
+            <i class="fa-brands fa-twitter" style="color: #8f8f8f;"></i>
+            <a href="">Twitter</a>
+          </div>
+          <div class="footface" id="footpart2" style="margin-top: 10px;">
+            <i class="fa-brands fa-facebook" style="color: #8f8f8f;"></i>
+            <a href="">Facebook</a>
+          </div>
+          <div class="footyou" id="footpart2" style="margin-top: 10px;">
+            <i class="fa-brands fa-youtube" style="color: #8f8f8f;"></i>
+            <a href="">YouTube</a>
+          </div>
+        </div>
+        <div class="contact">
+          <h5>Contact</h5>
+          <li type="none" style="margin-top: 30px;"><a href="">Contact Us</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">yourexample@email.com</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">example@email.com</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Call us: +1 254 568-5479</a></li>
+        </div>
+        <div class="about">
+          <h5>About</h5>
+          <li type="none" style="margin-top: 30px;"><a href="">Support Center</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Customer Support</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">About Us</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Copyright</a></li>
+        </div>
+        <div class="customer-care">
+          <h5>Costumer Care</h5>
+          <li type="none" style="margin-top: 30px;"><a href="">FAQ & Helps</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Shipping & Delivery</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Return & Exchanges</a></li>
+        </div>
+        <div class="our-information">
+          <h5>Our Information</h5>
+          <li type="none" style="margin-top: 30px;"><a href="">Privacy policy update</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Terms & conditions</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Return Policy</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Site Map</a></li>
+        </div>
+      </div>
+      <div class="footerminiline2"></div>
+      <div class="container" id="footercon2">
+        <p>Copyright © 2023 <strong>REDQ</strong> All rights reserved</p>
+        <div class="footeroptions">
+          <a href=""><img src="assets/img/footerimg1.svg" alt=""></a>
+          <a href=""><img src="assets/img/footerimg2.svg" alt=""></a>
+          <a href=""><img src="assets/img/footerimg3.svg" alt=""></a>
+          <a href=""><img src="assets/img/footerimg4.svg" alt=""></a>
+          <a href=""><img src="assets/img/footerimg5.svg" alt=""></a>
+        </div>
+        <a href="#searchsecone">
+          <p>Scroll to top</p>
+          
+            <i class="fa-solid fa-arrow-up" style="color: #121212;"></i>
+          
+        </div>
+      </div>
+  </footer>
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

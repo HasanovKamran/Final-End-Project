@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1410px !important;
+  padding: 0 !important;
+  margin: auto;
+}
+
+header {
+  background-color: white;
+  padding-bottom: 5px;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  align-items: baseline;
+}
+header nav .mainsec {
+  display: flex;
+  align-items: baseline;
+  margin-top: 20px;
+}
+header nav .mainsec ul {
+  display: flex;
+}
+header nav .mainsec ul li:nth-child(1) {
+  margin-left: 30px;
+}
+header nav .mainsec ul li:nth-child(2) {
+  margin-left: 50px;
+}
+header nav .mainsec ul li:nth-child(3) {
+  margin-left: 50px;
+}
+header nav .mainsec ul li:nth-child(4) {
+  margin-left: 50px;
+}
+header nav .mainsec ul li a {
+  text-decoration: none;
+  color: black;
+}
+header nav .search {
+  margin-top: 20px;
+  padding-left: 90px;
+}
+header nav .search form {
+  position: relative;
+}
+header nav .search form input {
+  width: 465px;
+  padding-left: 55px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f9f9f9;
+  height: 55px;
+}
+header nav .search form i {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+}
+header nav .features {
+  margin-top: 20px;
+  display: flex;
+  padding-left: 70px;
+}
+header nav .features .heart {
+  display: flex;
+  position: relative;
+}
+header nav .features .heart a i {
+  color: black;
+}
+header nav .features .heart p {
+  margin-left: 10px;
+}
+header nav .features .shop {
+  display: flex;
+  margin-left: 50px;
+}
+header nav .features .shop a i {
+  color: black;
+}
+header nav .features .shop p {
+  margin-left: 10px;
+}
+header nav .info {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px;
+}
+header nav .info .category {
+  background-color: black;
+  width: 150px;
+  height: 45px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav .info .category p {
+  color: white;
+  margin-bottom: 0 !important;
+}
+header nav .info .category:hover + .category-dropdown-content {
+  display: block;
+}
+header nav .info .category-dropdown-content {
+  background-color: rgb(241, 240, 240);
+  width: 235px;
+  padding: 25px 0;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin-top: 54px;
+}
+header nav .info .category-dropdown-content #category-content {
+  margin-left: 35px;
+  display: flex;
+  align-items: baseline;
+}
+header nav .info .category-dropdown-content #category-content p {
+  margin-left: 7px;
+}
+header nav .info ul {
+  position: relative;
+  display: flex;
+}
+header nav .info ul li i {
+  margin-left: 4px;
+}
+header nav .info ul .demos-dropdown-content {
+  background-color: rgb(241, 240, 240);
+  display: none;
+  z-index: 1;
+  position: absolute;
+  width: 230px;
+  z-index: 1;
+  padding-left: 25px;
+  margin-top: 20.5px;
+}
+header nav .info ul .demos-dropdown-content ul {
+  padding-left: 0 !important;
+  display: block;
+  margin-bottom: 20px;
+}
+header nav .info ul .demos-dropdown-content ul li {
+  margin-top: 15px;
+}
+header nav .info ul .demos:hover .demos-dropdown-content {
+  display: block;
+}
+header nav .info ul .pages-dropdown-content {
+  background-color: rgb(241, 240, 240);
+  display: none;
+  z-index: 1;
+  position: absolute;
+  width: 230px;
+  z-index: 1;
+  padding-left: 25px;
+  margin-top: 20.5px;
+}
+header nav .info ul .pages-dropdown-content ul {
+  padding-left: 0 !important;
+  display: block;
+  margin-bottom: 20px;
+}
+header nav .info ul .pages-dropdown-content ul li {
+  margin-top: 15px;
+}
+header nav .info ul .pages:hover .pages-dropdown-content {
+  display: block;
+}
+header nav .info ul .men-dropdown-content {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  margin-top: 20.5px;
+  margin-right: 20px !important;
+}
+header nav .info ul .men-dropdown-content #men-dropdown-content-divs {
+  width: 230px;
+  display: block;
+}
+header nav .info ul .men-dropdown-content #men-dropdown-content-divs .dropdownminiline {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(185, 185, 185);
+  margin: 15px 0;
+}
+header nav .info ul .men-dropdown-content #men-dropdown-content-divs h5 {
+  margin: 20px 0 20px 15px;
+  display: block;
+}
+header nav .info ul .men-dropdown-content #men-dropdown-content-divs ul {
+  display: block;
+  padding: 0 !important;
+  margin-left: 15px;
+  display: block;
+}
+header nav .info ul .men-dropdown-content #men-dropdown-content-divs ul li {
+  margin-top: 5px;
+}
+header nav .info ul .men:hover .men-dropdown-content {
+  display: flex;
+}
+header nav .login {
+  display: flex;
+  align-items: baseline;
+  margin-left: 365px;
+}
+header nav .login p {
+  margin-left: 10px;
+}
+header nav .language {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  width: 140px;
+  height: 35px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+header nav .language img {
+  margin-left: 10px;
+  width: 22px;
+  height: 15px;
+}
+header nav .language i {
+  margin-left: 8px;
+  margin-bottom: 0 !important;
+}
+header nav .language p {
+  margin-left: 5px;
+  margin-bottom: 0 !important;
+}
+header nav .language .languagesection {
+  display: none;
+  background-color: white;
+}
+header nav .language .languagesection .language1 {
+  border: 1px solid gainsboro;
+  width: 140px;
+  height: 35px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+header nav .language:hover {
+  background-color: rgb(241, 240, 240);
+}
+header nav .language .clicked .languagesection {
+  display: block;
+}
+header .headerminiline {
+  height: 2px;
+  width: 100%;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+}
+
+#brand .card {
+  transition: 0.2s linear;
+  border: none;
+}
+#brand .card:hover {
+  transform: translateY(-8px);
+  transition: 0.2s linear;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+#brand label input {
+  width: 7%;
+  border-radius: 10px;
+}
+#brand label p {
+  transform: translate(12px, 8px);
+}
+#brand #sorting {
+  width: 55%;
+  height: 5vh;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#brand #sorting i {
+  font-size: 10px;
+}
+#brand #loadmore {
+  width: 15%;
+  height: 7vh;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}/*# sourceMappingURL=searchbig.css.map */

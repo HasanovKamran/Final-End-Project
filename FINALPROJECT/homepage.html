@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/sass/homepage.css" />
+    <link rel="stylesheet" href="assets/sass/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <div class="container">
+        <nav>
+          <div class="mainsec">
+            <a href=""><img src="assets/img/logo.svg" alt="" /></a>
+            <ul type="none">
+              <li>
+                <a href="">Deals Today</a>
+                <i class="fa-solid fa-bolt-lightning"></i>
+              </li>
+              <li>
+                <a href="">Offers</a>
+              </li>
+              <li>
+                <a href="">FAQ</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="search">
+            <form action="" class="form">
+              <input type="text" placeholder="Search Anyrhing..." />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+          </div>
+          <div class="features">
+            <div class="heart">
+              <!-- <div class="heartnum"><p>0</p></div> -->
+              <a href=""><i class="fa-regular fa-heart fa-lg"></i></a>
+              <p style="cursor: pointer;">Whishlist</p>
+            </div>
+            <div class="shop">
+              <!-- <div class="shopnum"><p>0</p></div> -->
+              <!-- <a  href=""
+                ><i
+                  class="fa-solid fa-bag-shopping fa-lg"
+                  style="color: #030303"
+                ></i
+              ></a> -->
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"><i
+                      class="fa-solid fa-bag-shopping fa-lg"
+                      style="color: #030303"
+                    ></i></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h3 class="offcanvas-title" id="offcanvasNavbarLabel"><strong>Shopping cart</strong></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <img src="assets/img/sidebarimg.webp" alt="" style="width: 200px; height: 310px; margin-left: 20%; margin-top: 50px;">
+                    <form class="d-flex mt-3" role="search">
+                      
+                      <button  style="padding: 15px 5px; border: 1px solid rgb(190, 189, 189); background-color: #b2b2be; border-radius: 7px; margin-left: 25%; margin-top: 30;">Proceed To Chechkout</button>
+                    </form>
+                  </div>
+                </div>
+                
+                   
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                    </button> -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  
+              <p style="cursor: pointer;">Shopping</p>
+            </div>
+          </div>
+        </nav>
+        <div class="headerminiline"></div>
+        <nav>
+          <div class="info">
+            <div class="category">
+              <i class="fa-solid fa-bars" style="color: #fcfcfd"></i>
+              <p>All Categories</p>
+            </div>
+            <div class="category-dropdown-content">
+              <div class="category-women" id="category-content">
+                <i class="fa-solid fa-person-dress fa-lg" style="color: #0f0f0f;"></i>
+                <p>Women’s Fashion</p>
+              </div>
+              <div class="category-men" id="category-content">
+                <i class="fa-solid fa-person fa-lg" style="color: #0f0f0f;"></i>
+                <p>Men’s Fashion</p>
+              </div>
+              <div class="category-watch" id="category-content">
+                <i class="fa-regular fa-clock fa-lg" style="color: #0f0f0f;"></i>
+                <p>Watches</p>
+              </div>
+              <div class="category-wallet" id="category-content">
+                <i class="fa-solid fa-wallet fa-lg" style="color: #0f0f0f;"></i>
+                <p>Wallets</p>
+              </div>
+              <div class="category-bag" id="category-content">
+                <i class="fa-solid fa-briefcase fa-lg" style="color: #0f0f0f;"></i>
+                <p>Bags</p>
+              </div>
+              <div class="category-jewelry" id="category-content">
+                <i class="fa-regular fa-gem fa-lg" style="color: #0f0f0f;"></i>
+                <p>Jewelry</p>
+              </div>
+              <div class="category-sunglass" id="category-content">
+                <i class="fa-solid fa-glasses fa-lg" style="color: #0f0f0f;"></i>
+                <p>Sunglasses</p>
+              </div>
+              <div class="category-sneaker" id="category-content"> 
+                <i class="fa-solid fa-shoe-prints fa-lg" style="color: #0f0f0f;"></i>
+                <p>Sneakers</p>
+              </div>
+            </div>
+            <ul type="none">
+              <li class="demos">
+                Demos<i
+                  class="fa-solid fa-caret-down"
+                  style="color: #8c9ab1"
+                ></i>
+                <div class="demos-dropdown-content">
+                  <ul type="none">
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                  </ul>
+                </div>
+              </li>
+              <li style="margin-left: 40px;" class="men">
+                Men Wear<i
+                  class="fa-solid fa-caret-down"
+                  style="color: #8c9ab1"
+                ></i>
+                <div class="men-dropdown-content">
+                  <div class="dropdown1" id="men-dropdown-content-divs" style="background-color: rgb(241, 240, 240);">
+                    <h5>Modern</h5>
+                    <ul type="none">
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                    </ul>
+                    <div class="dropdownminiline"></div>
+                    <h5>Modern</h5>
+                    <h5>Modern</h5>
+                  </div>
+                  <div class="dropdown2" id="men-dropdown-content-divs" style="background-color: rgb(226, 226, 226);">
+                    <h5>Modern</h5>
+                    <ul type="none">
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                    </ul>
+                    <div class="dropdownminiline"></div>
+                    <h5>Modern</h5>
+                    <h5>Modern</h5>
+                  </div>
+                  <div class="dropdown3" id="men-dropdown-content-divs" style="background-color: rgb(241, 240, 240);">
+                    <h5>Modern</h5>
+                    <ul type="none">
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                    </ul>
+                    <div class="dropdownminiline"></div>
+                    <h5>Modern</h5>
+                    <ul type="none">
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                    </ul>
+                  </div>
+                  <div class="dropdown4" id="men-dropdown-content-divs" style="background-color: rgb(226, 226, 226);">
+                    <h5>Modern</h5>
+                    <ul type="none">
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                    </ul>
+                    <div class="dropdownminiline"></div>
+                    <h5>Modern</h5>
+                    <h5>Modern</h5>
+                  </div>
+                  <div class="dropdown5" id="men-dropdown-content-divs" style="background-color: rgb(241, 240, 240);">
+                    <h5>Modern</h5>
+                    <ul type="none">
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                    </ul>
+                    <div class="dropdownminiline"></div>
+                    <h5>Modern</h5>
+                    <ul type="none">
+                      <li>Modern</li>
+                      <li>Modern</li>
+                      <li>Modern</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li style="margin-left: 40px;">
+                Women Wear
+                <!-- <i
+                  class="fa-solid fa-caret-down"
+                  style="color: #8c9ab1"
+                ></i> -->
+              </li>
+              <li style="margin-left: 40px;">Search</li>
+              <li style="margin-left: 40px;">Shop</li>
+              <li style="margin-left: 40px;" class="pages">
+                Pages<i
+                  class="fa-solid fa-caret-down"
+                  style="color: #8c9ab1"
+                ></i>
+                <div class="pages-dropdown-content">
+                  <ul type="none">
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                    <li>Modern</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="login">
+            <i class="fa-regular fa-user fa-lg" style="color: #0c0d0d"></i>
+            <p>Login</p>
+          </div>
+          <div class="language">
+            <img src="assets/img/england.png" alt="">
+            <p>English-En</p>
+            <i class="fa-solid fa-angle-down fa-2xs"></i>
+            <div class="languagesection">
+              <div class="language1">
+                <img src="assets/img/england.png" alt="">
+                <p>English-En</p>
+                <i class="fa-solid fa-angle-down fa-2xs"></i>
+              </div>
+              <div class="language1">
+                <img src="assets/img/england.png" alt="">
+                <p>English-En</p>
+                <i class="fa-solid fa-angle-down fa-2xs"></i>
+              </div>
+              <div class="language1">
+                <img src="assets/img/england.png" alt="">
+                <p>English-En</p>
+                <i class="fa-solid fa-angle-down fa-2xs"></i>
+              </div>
+              <div class="language1">
+                <img src="assets/img/england.png" alt="">
+                <p>English-En</p>
+                <i class="fa-solid fa-angle-down fa-2xs"></i>
+              </div>
+              <div class="language1">
+                <img src="assets/img/england.png" alt="">
+                <p>English-En</p>
+                <i class="fa-solid fa-angle-down fa-2xs"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+  </header>
+
+    <section class="body1" id="body1">
+      <div class="swiper mySwiper body1s" id="slider1container">
+        <div class="swiper-wrapper" id="slider1container1">
+          <div class="swiper-slide" id="slide1item">
+            <img src="assets/img/slide1img1.webp" alt="" />
+          </div>
+          <div class="swiper-slide" id="slide1item">
+            <img src="assets/img/slide1img2.webp" alt="" />
+          </div>
+          <div class="swiper-slide" id="slide1item">
+            <img src="assets/img/slide1img3.webp" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination far" id="slide1button"></div>
+      </div>
+    </section>
+
+    <section class="body2">
+      <div class="container">
+        <h2>Browse Categories</h2>
+        <div class="swiper mySwiper ad" id="a">
+          <div class="swiper-wrapper" id="b">
+            <div class="swiper-slide" id="c">
+              <div class="slide2cards">
+                <img src="assets/img/man.png" alt="" />
+                <div class="slide2info">
+                  <h5>Man</h5>
+                  <p>3 Brands,20+ Products</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" id="c">
+              <div class="slide2cards">
+                <img src="assets/img/watch.png" alt="" />
+                <div class="slide2info">
+                  <h5>Watch</h5>
+                  <p>3 Brands,20+ Products</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" id="c">
+              <div class="slide2cards">
+                <img src="assets/img/kids.png" alt="" />
+                <div class="slide2info">
+                  <h5>Kids</h5>
+                  <p>3 Brands,20+ Products</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" id="c">
+              <div class="slide2cards">
+                <img src="assets/img/sports.png" alt="" />
+                <div class="slide2info">
+                  <h5>Sports</h5>
+                  <p>3 Brands,20+ Products</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" id="c">
+              <div class="slide2cards">
+                <img src="assets/img/sunglass.png" alt="" />
+                <div class="slide2info">
+                  <h5>Sunglass</h5>
+                  <p>3 Brands,20+ Products</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" id="c">
+              <div class="slide2cards">
+                <img src="assets/img/bags.png" alt="" />
+                <div class="slide2info">
+                  <h5>Bag</h5>
+                  <p>3 Brands,20+ Products</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" id="c">
+              <div class="slide2cards">
+                <img src="assets/img/sneakers.png" alt="" />
+                <div class="slide2info">
+                  <h5>Sneakers</h5>
+                  <p>3 Brands,20+ Products</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" id="c">
+              <div class="slide2cards">
+                <img src="assets/img/woman.png" alt="" />
+                <div class="slide2info">
+                  <h5>Woman</h5>
+                  <p>3 Brands,20+ Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next ne" id="z"></div>
+          <div class="swiper-button-prev pr" id="z"></div>
+        </div>
+        <div class="body2imgcontainer">
+          <div class="body2img1" id="body2imgs">
+            <img src="assets/img/body2img1.webp" alt="" />
+          </div>
+          <div class="body2img2" id="body2imgs">
+            <img src="assets/img/body2img2.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="body3">
+      <div class="container">
+        <h2>New Arrivals</h2>
+        <div class="body3kinds">
+          <div class="box" onclick="showContainer(1)" style="cursor: pointer;">All Collection</div>
+          <div class="box" onclick="showContainer(2)" style="cursor: pointer;">Men Collection</div>
+          <div class="box" onclick="showContainer(3)" style="cursor: pointer;">Women Collection</div>
+          <div class="box" onclick="showContainer(4)" style="cursor: pointer;">Kids Collection</div>
+        </div>
+        <div class="body3info">
+          <div
+            class="big-container"
+            id="big-container-1"
+            style="display: block"
+          >
+            <div class="row" id="cardcon">
+              <div class="col-xl-3 col-lg-4 col-md-6 card modalcard"  id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard1.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Armani Veni Vidi Vici</h5>
+                  <p>Fendi began life in 1925 as a fur and...</p>
+                  <p style="text-decoration: line-through;">$20.00</p>
+                  <p>$17.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 card " id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard2.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>H&M Global Desi</h5>
+                  <p>Blue solid woven regular top, curved ...</p>
+                  <p style="text-decoration: line-through;">$40.00</p>
+                  <p>$30.00</p>
+                </div>
+              </div> 
+              <div class="col-xl-3 col-lg-4 col-md-6 card " id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard3.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Zara Solly White Shirt</h5>
+                    <p>For a chic and smart look, don this w...</p>
+                    <p style="text-decoration: line-through;">$32.00</p>
+                    <p>$25.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 card " id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard4.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Hermes Carlton London</h5>
+                  <p>Off-White self-striped knitted midi A-...</p>
+                  <p>$15.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard5.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Scuba Stand Collar Topper Jacket</h5>
+                  <p>Zara provides only the highest-qualit...</p>
+                  <p style="text-decoration: line-through;">$16.00</p>
+                  <p>$12.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard6.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Armani Wide-Leg Trousers</h5>
+                    <p>Monochrome elegance. Made with a...</p>
+                    <p style="text-decoration: line-through;">$80.00</p>
+                    <p>$60.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard7.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Short Sleeve Shirts For Men</h5>
+                  <p>From casual days out to parties, din...</p>
+                  <p style="text-decoration: line-through;">$18.99</p>
+                  <p>$12.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard8.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Blazer And A Neck Scarf</h5>
+                  <p>blue short sleeve basic midi dress fe...</p>
+                  <p style="text-decoration: line-through;">$23.00</p>
+                  <p>$13.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="big-container" id="big-container-2" style="display: none">
+            <div class="row" id="cardcon">
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard5.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Scuba Stand Collar Topper Jacket</h5>
+                  <p>Zara provides only the highest-qualit...</p>
+                  <p>$16.00</p>
+                  <p>$12.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard6.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Armani Wide-Leg Trousers</h5>
+                    <p>Monochrome elegance. Made with a...</p>
+                    <p>$80.00</p>
+                    <p>$60.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard7.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Short Sleeve Shirts For Men</h5>
+                  <p>From casual days out to parties, din...</p>
+                  <p>$18.99</p>
+                  <p>$12.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard8.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Blazer And A Neck Scarf</h5>
+                  <p>blue short sleeve basic midi dress fe...</p>
+                  <p>$23.00</p>
+                  <p>$13.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard1.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Armani Veni Vidi Vici</h5>
+                  <p>Fendi began life in 1925 as a fur and...</p>
+                  <p>$20.00</p>
+                  <p>$17.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard2.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>H&M Global Desi</h5>
+                    <p>Blue solid woven regular top, curved...</p>
+                    <p>$40.00</p>
+                    <p>$30.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard3.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Zara Solly White Shirt</h5>
+                  <p>For a chic and smart look, don this w...</p>
+                  <p>$32.00</p>
+                  <p>$25.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard4.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Hermes Carlton London</h5>
+                  <p>Off-White self-striped knitted midi A...</p>
+                  <p>$15.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="big-container" id="big-container-3" style="display: none">
+            <div class="row" id="cardcon">
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard1.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Armani Veni Vidi Vici</h5>
+                  <p>Fendi began life in 1925 as a fur and...</p>
+                  <p>$20.00</p>
+                  <p>$17.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard2.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>H&M Global Desi</h5>
+                    <p>Blue solid woven regular top, curved...</p>
+                    <p>$40.00</p>
+                    <p>$30.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard3.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Zara Solly White Shirt</h5>
+                  <p>For a chic and smart look, don this w...</p>
+                  <p>$32.00</p>
+                  <p>$25.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard4.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Hermes Carlton London</h5>
+                  <p>Off-White self-striped knitted midi A...</p>
+                  <p>$15.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard1.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Scuba Stand Collar Topper Jacket</h5>
+                  <p>Zara provides only the highest-qualit...</p>
+                  <p>$16.00</p>
+                  <p>$12.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard2.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Armani Wide-Leg Trousers</h5>
+                    <p>Monochrome elegance. Made with a...</p>
+                    <p>$80.00</p>
+                    <p>$60.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard3.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Short Sleeve Shirts For Men</h5>
+                  <p>From casual days out to parties, din...</p>
+                  <p>$18.99</p>
+                  <p>$12.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard4.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Blazer And A Neck Scarf</h5>
+                  <p>blue short sleeve basic midi dress fe...</p>
+                  <p>$23.00</p>
+                  <p>$13.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="big-container" id="big-container-4" style="display: none">
+            <div class="row" id="cardcon">
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard1.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Scuba Stand Collar Topper Jacket</h5>
+                  <p>Zara provides only the highest-qualit...</p>
+                  <p>$16.00</p>
+                  <p>$12.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard2.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Armani Wide-Leg Trousers</h5>
+                    <p>Monochrome elegance. Made with a...</p>
+                    <p>$80.00</p>
+                    <p>$60.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard3.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Short Sleeve Shirts For Men</h5>
+                  <p>From casual days out to parties, din...</p>
+                  <p>$18.99</p>
+                  <p>$12.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard4.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Blazer And A Neck Scarf</h5>
+                  <p>blue short sleeve basic midi dress fe...</p>
+                  <p>$23.00</p>
+                  <p>$13.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard5.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Scuba Stand Collar Topper Jacket</h5>
+                  <p>Zara provides only the highest-qualit...</p>
+                  <p>$16.00</p>
+                  <p>$12.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard6.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Armani Wide-Leg Trousers</h5>
+                    <p>Monochrome elegance. Made with a...</p>
+                    <p>$80.00</p>
+                    <p>$60.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard7.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Short Sleeve Shirts For Men</h5>
+                  <p>From casual days out to parties, din...</p>
+                  <p>$18.99</p>
+                  <p>$12.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard8.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Blazer And A Neck Scarf</h5>
+                  <p>blue short sleeve basic midi dress fe...</p>
+                  <p>$23.00</p>
+                  <p>$13.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="body3con">
+          <h3>Top Brands Deal</h3>
+          <p>Up To <span>60% off on brands</span></p>
+          <div class="body3slide">
+            <div class="swiper mySwiper" id="body3conswipper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" id="w"><img src="assets/img/body3dior.png" alt=""></div>
+                <div class="swiper-slide" id="w"><img src="assets/img/body3gucci.png" alt=""></div>
+                <div class="swiper-slide" id="w"><img src="assets/img/body3levis.png" alt=""></div>
+                <div class="swiper-slide" id="w"><img src="assets/img/body3nike.png" alt=""></div>
+                <div class="swiper-slide" id="w"><img src="assets/img/body3puma.png" alt=""></div>
+                <div class="swiper-slide" id="w"><img src="assets/img/body3zara.png" alt=""></div>
+                <div class="swiper-slide" id="w"><img src="assets/img/body3under-armour.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="body4">
+      <div class="container">
+        <h2>Featured Products</h2>
+        <div class="body4con1">
+          <div class="body4imgs">
+            <img src="assets/img/body4img1.webp" alt="">
+          </div>
+          <div class="body4imgs" style="height: 431.38px;">
+            <img src="assets/img/body4img2.webp" alt="">
+            <h5>Nike Bag</h5>
+            <p>35 Brands, 1000+ Products</p>
+          </div>
+          <div class="body4imgs" style="height: 431.38px;">
+            <img src="assets/img/body4img3.webp" alt="">
+            <h5>Adidas Woolen Cap</h5>
+            <p>35 Brands, 1000+ Products</p>
+          </div>
+          <div class="body4imgs" style="height: 431.38px;">
+            <img src="assets/img/body3mancard4.webp" alt="">
+            <h5>Nike Leader VT</h5>
+            <p>35 Brands, 1000+ Products</p>
+          </div>
+        </div>
+        <div class="body4con2">
+          <img src="assets/img/body4img5.webp" alt="">
+        </div>
+      </div>
+    </section>
+    
+    <section class="body5">
+      <div class="container">
+        <h2>Trending Products</h2>
+        <div class="body3kinds">
+          <div class="box" onclick="showContainerr(1)" style="cursor: pointer;">All Collection</div>
+          <div class="box" onclick="showContainerr(2)" style="cursor: pointer;">Men Collection</div>
+          <div class="box" onclick="showContainerr(3)" style="cursor: pointer;">Women Collection</div>
+          <div class="box" onclick="showContainerr(4)" style="cursor: pointer;">Kids Collection</div>
+        </div>
+        <div class="body3info">
+          <div
+            class="big-container"
+            id="big-containerr-1"
+            style="display: block"
+          >
+            <div class="row" id="cardcon">
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard1.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Armani Veni Vidi Vici</h5>
+                  <p>Fendi began life in 1925 as a fur and...</p>
+                  <p style="text-decoration: line-through;">$20.00</p>
+                  <p>$17.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard2.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>H&M Global Desi</h5>
+                  <p>Blue solid woven regular top, curved ...</p>
+                  <p style="text-decoration: line-through;">$40.00</p>
+                  <p>$30.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard3.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Zara Solly White Shirt</h5>
+                    <p>For a chic and smart look, don this w...</p>
+                    <p style="text-decoration: line-through;">$32.00</p>
+                    <p>$25.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard4.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Hermes Carlton London</h5>
+                  <p>Off-White self-striped knitted midi A-...</p>
+                  <p>$15.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard5.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Scuba Stand Collar Topper Jacket</h5>
+                  <p>Zara provides only the highest-qualit...</p>
+                  <p style="text-decoration: line-through;">$16.00</p>
+                  <p>$12.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard6.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Armani Wide-Leg Trousers</h5>
+                    <p>Monochrome elegance. Made with a...</p>
+                    <p style="text-decoration: line-through;">$80.00</p>
+                    <p>$60.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard7.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Short Sleeve Shirts For Men</h5>
+                  <p>From casual days out to parties, din...</p>
+                  <p style="text-decoration: line-through;">$18.99</p>
+                  <p>$12.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard8.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Blazer And A Neck Scarf</h5>
+                  <p>blue short sleeve basic midi dress fe...</p>
+                  <p style="text-decoration: line-through;">$23.00</p>
+                  <p>$13.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="big-container" id="big-containerr-2" style="display: none">
+            <div class="row" id="cardcon">
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard5.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Scuba Stand Collar Topper Jacket</h5>
+                  <p>Zara provides only the highest-qualit...</p>
+                  <p>$16.00</p>
+                  <p>$12.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard6.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Armani Wide-Leg Trousers</h5>
+                    <p>Monochrome elegance. Made with a...</p>
+                    <p>$80.00</p>
+                    <p>$60.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard7.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Short Sleeve Shirts For Men</h5>
+                  <p>From casual days out to parties, din...</p>
+                  <p>$18.99</p>
+                  <p>$12.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard8.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Blazer And A Neck Scarf</h5>
+                  <p>blue short sleeve basic midi dress fe...</p>
+                  <p>$23.00</p>
+                  <p>$13.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard1.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Armani Veni Vidi Vici</h5>
+                  <p>Fendi began life in 1925 as a fur and...</p>
+                  <p>$20.00</p>
+                  <p>$17.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard2.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>H&M Global Desi</h5>
+                    <p>Blue solid woven regular top, curved...</p>
+                    <p>$40.00</p>
+                    <p>$30.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard3.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Zara Solly White Shirt</h5>
+                  <p>For a chic and smart look, don this w...</p>
+                  <p>$32.00</p>
+                  <p>$25.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard4.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Hermes Carlton London</h5>
+                  <p>Off-White self-striped knitted midi A...</p>
+                  <p>$15.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="big-container" id="big-containerr-3" style="display: none">
+            <div class="row" id="cardcon">
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard1.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Armani Veni Vidi Vici</h5>
+                  <p>Fendi began life in 1925 as a fur and...</p>
+                  <p>$20.00</p>
+                  <p>$17.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard2.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>H&M Global Desi</h5>
+                    <p>Blue solid woven regular top, curved...</p>
+                    <p>$40.00</p>
+                    <p>$30.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard3.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Zara Solly White Shirt</h5>
+                  <p>For a chic and smart look, don this w...</p>
+                  <p>$32.00</p>
+                  <p>$25.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3mancard4.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Hermes Carlton London</h5>
+                  <p>Off-White self-striped knitted midi A...</p>
+                  <p>$15.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard1.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Scuba Stand Collar Topper Jacket</h5>
+                  <p>Zara provides only the highest-qualit...</p>
+                  <p>$16.00</p>
+                  <p>$12.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard2.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Armani Wide-Leg Trousers</h5>
+                    <p>Monochrome elegance. Made with a...</p>
+                    <p>$80.00</p>
+                    <p>$60.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard3.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Short Sleeve Shirts For Men</h5>
+                  <p>From casual days out to parties, din...</p>
+                  <p>$18.99</p>
+                  <p>$12.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard4.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Blazer And A Neck Scarf</h5>
+                  <p>blue short sleeve basic midi dress fe...</p>
+                  <p>$23.00</p>
+                  <p>$13.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="big-container" id="big-containerr-4" style="display: none">
+            <div class="row" id="cardcon">
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard1.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Scuba Stand Collar Topper Jacket</h5>
+                  <p>Zara provides only the highest-qualit...</p>
+                  <p>$16.00</p>
+                  <p>$12.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard2.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Armani Wide-Leg Trousers</h5>
+                    <p>Monochrome elegance. Made with a...</p>
+                    <p>$80.00</p>
+                    <p>$60.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard3.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Short Sleeve Shirts For Men</h5>
+                  <p>From casual days out to parties, din...</p>
+                  <p>$18.99</p>
+                  <p>$12.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3womancard4.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Blazer And A Neck Scarf</h5>
+                  <p>blue short sleeve basic midi dress fe...</p>
+                  <p>$23.00</p>
+                  <p>$13.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard5.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Scuba Stand Collar Topper Jacket</h5>
+                  <p>Zara provides only the highest-qualit...</p>
+                  <p>$16.00</p>
+                  <p>$12.00</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard6.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="allsomecard1line">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Armani Wide-Leg Trousers</h5>
+                    <p>Monochrome elegance. Made with a...</p>
+                    <p>$80.00</p>
+                    <p>$60.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard7.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Short Sleeve Shirts For Men</h5>
+                  <p>From casual days out to parties, din...</p>
+                  <p>$18.99</p>
+                  <p>$12.99</p>
+                </div>
+              </div>
+              <div class="col-xl-3 card" id="card" style="margin-top: 15px; border: none;">
+                <img src="assets/img/body3allcard8.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="rate" style="display: flex; align-items: baseline;">
+                    <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                    <p>4.5</p>
+                  </div>
+                  <h5>Blazer And A Neck Scarf</h5>
+                  <p>blue short sleeve basic midi dress fe...</p>
+                  <p>$23.00</p>
+                  <p>$13.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="body5con">
+        <img src="assets/img/body5img.webp" alt="">
+      </div>
+    </section>
+
+
+    <section class="body6">
+      <div class="container">
+        <h2>Trending Collection</h2>
+        <div class="body6boxbig">
+          <div class="body6box"><img src="assets/img/body6img1.webp" alt=""></div>
+          <div class="body6box"><img src="assets/img/body6img2.webp" alt=""></div>
+          <div class="body6box"><img src="assets/img/body6img3.webp" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="body7">
+      <div class="container">
+        <h2>Recently View Products</h2>
+        <div class="body7info">
+          <div class="swiper mySwiper" id="body7sli">
+            <div class="swiper-wrapper" id="y">
+              <div class="swiper-slide" id="w">
+                <div class=" card" id="card" style="margin-top: 15px; border: none;">
+                  <img src="assets/img/body3allcard1.webp" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Armani Veni Vidi Vici</h5>
+                    <p>Fendi began life in 1925 as a fur and...</p>
+                    <p>$20.00</p>
+                    <p>$17.99</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class=" card" id="card" style="margin-top: 15px; border: none;">
+                  <img src="assets/img/body3allcard8.webp" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Blazer And A Neck Scarf</h5>
+                    <p>blue short sleeve basic midi dress fe...</p>
+                    <p>$23.00</p>
+                    <p>$13.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class=" card" id="card" style="margin-top: 15px; border: none;">
+                  <img src="assets/img/body3allcard7.webp" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Short Sleeve Shirts For Men</h5>
+                    <p>From casual days out to parties, din...</p>
+                    <p>$18.99</p>
+                    <p>$12.99</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class=" card" id="card" style="margin-top: 15px; border: none;">
+                  <img src="assets/img/body3allcard6.webp" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <div class="allsomecard1line">
+                      <div class="rate" style="display: flex; align-items: baseline;">
+                        <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                        <p>4.5</p>
+                      </div>
+                      <h5>Armani Wide-Leg Trousers</h5>
+                      <p>Monochrome elegance. Made with a...</p>
+                      <p>$80.00</p>
+                      <p>$60.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class=" card" id="card" style="margin-top: 15px; border: none;">
+                  <img src="assets/img/body3allcard5.webp" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Scuba Stand Collar Topper Jacket</h5>
+                    <p>Zara provides only the highest-qualit...</p>
+                    <p>$16.00</p>
+                    <p>$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class=" card" id="card" style="margin-top: 15px; border: none;">
+                  <img src="assets/img/body3allcard5.webp" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Scuba Stand Collar Topper Jacket</h5>
+                    <p>Zara provides only the highest-qualit...</p>
+                    <p>$16.00</p>
+                    <p>$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class=" card" id="card" style="margin-top: 15px; border: none;">
+                  <img src="assets/img/body3allcard5.webp" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Scuba Stand Collar Topper Jacket</h5>
+                    <p>Zara provides only the highest-qualit...</p>
+                    <p>$16.00</p>
+                    <p>$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class=" card" id="card" style="margin-top: 15px; border: none;">
+                  <img src="assets/img/body3allcard5.webp" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Scuba Stand Collar Topper Jacket</h5>
+                    <p>Zara provides only the highest-qualit...</p>
+                    <p>$16.00</p>
+                    <p>$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class=" card" id="card" style="margin-top: 15px; border: none;">
+                  <img src="assets/img/body3allcard5.webp" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Scuba Stand Collar Topper Jacket</h5>
+                    <p>Zara provides only the highest-qualit...</p>
+                    <p>$16.00</p>
+                    <p>$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class=" card" id="card" style="margin-top: 15px; border: none;">
+                  <img src="assets/img/body3allcard5.webp" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <div class="rate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                    <h5>Scuba Stand Collar Topper Jacket</h5>
+                    <p>Zara provides only the highest-qualit...</p>
+                    <p>$16.00</p>
+                    <p>$12.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="body7con">
+          <div class="body7coninfo">
+            <h3>The ChawkBazar App</h3>
+            <h1>Share Your Ideas & Shop</h1>
+            <h1>Endless Inspiration</h1>
+            <div class="body7programs">
+              <img src="assets/img/body7appstore.svg" alt="">
+              <img src="assets/img/body7googleplay.svg" alt="">
+            </div>
+          </div>
+          <img src="assets/img/body7img.webp" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="body8">
+      <div class="container">
+        <h2>Testimonial</h2>
+        <div class="body8con">
+          <div class="swiper mySwiper" id="body8concards">
+            <div class="swiper-wrapper" id="q">
+              <div class="swiper-slide" id="w">
+                <div class="body8conbox">
+                  <div class="boxhead">
+                    <img src="assets/img/body8conimg1.jpg" alt="">
+                    <div class="boxheadinfo">
+                      <h5>Amanda Johnson</h5>
+                      <p>from Duisbarg</p>
+                    </div>
+                    <div class="body8boxrate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quam dolor adipisci doloremque aperiam! A totam ut quaerat adipisci incidunt, quam repudiandae temporibus odit hic?</p>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class="body8conbox">
+                  <div class="boxhead">
+                    <img src="assets/img/body8conimg1.jpg" alt="">
+                    <div class="boxheadinfo">
+                      <h5>Amanda Johnson</h5>
+                      <p>from Duisbarg</p>
+                    </div>
+                    <div class="body8boxrate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quam dolor adipisci doloremque aperiam! A totam ut quaerat adipisci incidunt, quam repudiandae temporibus odit hic?</p>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class="body8conbox">
+                  <div class="boxhead">
+                    <img src="assets/img/body8conimg1.jpg" alt="">
+                    <div class="boxheadinfo">
+                      <h5>Amanda Johnson</h5>
+                      <p>from Duisbarg</p>
+                    </div>
+                    <div class="body8boxrate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quam dolor adipisci doloremque aperiam! A totam ut quaerat adipisci incidunt, quam repudiandae temporibus odit hic?</p>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class="body8conbox">
+                  <div class="boxhead">
+                    <img src="assets/img/body8conimg1.jpg" alt="">
+                    <div class="boxheadinfo">
+                      <h5>Amanda Johnson</h5>
+                      <p>from Duisbarg</p>
+                    </div>
+                    <div class="body8boxrate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quam dolor adipisci doloremque aperiam! A totam ut quaerat adipisci incidunt, quam repudiandae temporibus odit hic?</p>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class="body8conbox">
+                  <div class="boxhead">
+                    <img src="assets/img/body8conimg1.jpg" alt="">
+                    <div class="boxheadinfo">
+                      <h5>Amanda Johnson</h5>
+                      <p>from Duisbarg</p>
+                    </div>
+                    <div class="body8boxrate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quam dolor adipisci doloremque aperiam! A totam ut quaerat adipisci incidunt, quam repudiandae temporibus odit hic?</p>
+                </div>
+              </div>
+              <div class="swiper-slide" id="w">
+                <div class="body8conbox">
+                  <div class="boxhead">
+                    <img src="assets/img/body8conimg1.jpg" alt="">
+                    <div class="boxheadinfo">
+                      <h5>Amanda Johnson</h5>
+                      <p>from Duisbarg</p>
+                    </div>
+                    <div class="body8boxrate" style="display: flex; align-items: baseline;">
+                      <i class="fa-solid fa-star" style="color: #e9fa00;"></i>
+                      <p>4.5</p>
+                    </div>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quam dolor adipisci doloremque aperiam! A totam ut quaerat adipisci incidunt, quam repudiandae temporibus odit hic?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="body8imgcon">
+          <div class="body8imgs">
+            <img src="assets/img/body8img1.jpeg" alt="">
+          </div>
+          <div class="body8imgs">
+            <img src="assets/img/body8img2.jpg" alt="">
+          </div>
+          <div class="body8imgs">
+            <img src="assets/img/body8img3.jpeg" alt="">
+          </div>
+          <div class="body8imgs">
+            <img src="assets/img/body8img4.jpeg" alt="">
+          </div>
+          <div class="body8imgs">
+            <img src="assets/img/body8img5.jpg" alt="">
+          </div>
+          <div class="body8imgs">
+            <img src="assets/img/body8img6.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="body9">
+      <div class="container">
+        <div class="body9info">
+          <h2>Get Expert Tips In Your Inbox</h2>
+          <p>Subscribe to our newsletter and stay updated.</p>
+        </div>
+        <div class="inputdiv">
+          <form action="">
+            <input type="text" placeholder="Write your email here">
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footerminiline1"></div>
+      <div class="container" id="footercon1">
+        <div class="footerinfo">
+          <img src="assets/img/logo.svg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam non amet reiciendis voluptate delectus?</p>
+          <div class="footerlogos">
+            <i class="fa-brands fa-instagram" style="color: #8f8f8f;"></i>
+            <i class="fa-brands fa-twitter" style="color: #8f8f8f;"></i>
+            <i class="fa-brands fa-facebook" style="color: #8f8f8f;"></i>
+            <i class="fa-brands fa-youtube" style="color: #8f8f8f;"></i>
+          </div>
+        </div>
+        <div class="social">
+          <h5>Social</h5>
+          <div class="footins" id="footpart2" style="margin-top: 30px;">
+            <i class="fa-brands fa-instagram" style="color: #8f8f8f;"></i>
+            <a href="">Instagram</a>
+          </div>
+          <div class="foottwi" id="footpart2" style="margin-top: 10px;">
+            <i class="fa-brands fa-twitter" style="color: #8f8f8f;"></i>
+            <a href="">Twitter</a>
+          </div>
+          <div class="footface" id="footpart2" style="margin-top: 10px;">
+            <i class="fa-brands fa-facebook" style="color: #8f8f8f;"></i>
+            <a href="">Facebook</a>
+          </div>
+          <div class="footyou" id="footpart2" style="margin-top: 10px;">
+            <i class="fa-brands fa-youtube" style="color: #8f8f8f;"></i>
+            <a href="">YouTube</a>
+          </div>
+        </div>
+        <div class="contact">
+          <h5>Contact</h5>
+          <li type="none" style="margin-top: 30px;"><a href="">Contact Us</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">yourexample@email.com</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">example@email.com</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Call us: +1 254 568-5479</a></li>
+        </div>
+        <div class="about">
+          <h5>About</h5>
+          <li type="none" style="margin-top: 30px;"><a href="">Support Center</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Customer Support</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">About Us</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Copyright</a></li>
+        </div>
+        <div class="customer-care">
+          <h5>Costumer Care</h5>
+          <li type="none" style="margin-top: 30px;"><a href="">FAQ & Helps</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Shipping & Delivery</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Return & Exchanges</a></li>
+        </div>
+        <div class="our-information">
+          <h5>Our Information</h5>
+          <li type="none" style="margin-top: 30px;"><a href="">Privacy policy update</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Terms & conditions</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Return Policy</a></li>
+          <li type="none" style="margin-top: 10px;"><a href="">Site Map</a></li>
+        </div>
+      </div>
+      <div class="footerminiline2"></div>
+      <div class="container" id="footercon2">
+        <p>Copyright © 2023 <strong>REDQ</strong> All rights reserved</p>
+        <div class="footeroptions">
+          <a href=""><img src="assets/img/footerimg1.svg" alt=""></a>
+          <a href=""><img src="assets/img/footerimg2.svg" alt=""></a>
+          <a href=""><img src="assets/img/footerimg3.svg" alt=""></a>
+          <a href=""><img src="assets/img/footerimg4.svg" alt=""></a>
+          <a href=""><img src="assets/img/footerimg5.svg" alt=""></a>
+        </div>
+        <a href="#body1">
+          <p>Scroll to top</p>
+          
+            <i class="fa-solid fa-arrow-up" style="color: #121212;"></i>
+          
+        </div>
+      </div>
+    </footer>
+
+    <div class="modalcardcon" id="modul">
+      <div class="modalcon">
+        <div class="modalimg">
+          <img src="assets/img/body3allcard4.webp" alt="">
+        </div>
+        <div class="modalinfo">
+          <div class="modalcontent">
+            <h3>Hermes Carlton London</h3>
+            <p style="margin-top: 10px;">Off-White self-striped knitted midi A-line dress, has a scoop neck, sleeveless, straight hem</p>
+            <p style="font-size: 30px;">$15.00</p>
+            <h5>Color</h5>
+            <div class="modalcolor">
+              <div class="colorbox">
+                <div class="orange"></div>
+              </div>
+              <div class="colorbox" style="margin-left: 10px;">
+                <div class="pink"></div>
+              </div>
+              <div class="colorbox" style="margin-left: 10px;">
+                <div class="blue"></div>
+              </div>
+              <div class="colorbox" style="margin-left: 10px;">
+                <div class="red"></div>
+              </div>
+            </div>
+            <h5 style="margin-top: 15px;">Size</h5>
+            <div class="modalsize">
+              <div class="sizebox">S</div>
+              <div class="sizebox" style="margin-left: 10px;">M</div>
+              <div class="sizebox" style="margin-left: 10px;">L</div>
+              <div class="sizebox" style="margin-left: 10px;">XL</div>
+            </div>
+            <div class="numbersec" style="margin-top: 10px;">
+              <div class="modal-number-input">
+                <button data-decrease class="decrement-btn">-</button>
+                <input data-value type="text" class="number-value" value="1">
+                <button data-increase class="increment-btn">+</button>
+              </div>
+              <div class="addcard">Add to card</div>
+            </div>
+            <div class="modaldetail">View to details</div>
+          </div> 
+        </div>
+        <button class="modal-close-btn" >X</button>
+      </div>
+    </div>
+
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/homepage.js"></script>
+    <a href="./checkout.html></a>
+  </body>
+</html>
